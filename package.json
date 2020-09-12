@@ -4,7 +4,7 @@
   "description": "Posture School for Computer Workers",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "start:dev": "live-server ./dist",
     "build": "webpack -p",
     "build:dev": "webpack -d --watch"
