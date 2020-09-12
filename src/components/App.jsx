@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './Header.jsx';
 import Home from './Home/Home.jsx';
 import GettingStarted from './GettingStarted.jsx'
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import WhatIsCrudy from './WhatIsCrudy.jsx';
 
 const theme = createMuiTheme({
   palette: {
@@ -27,6 +29,17 @@ const theme = createMuiTheme({
 })
 
 const App = () => {
+
+  // const [redirect, setRedirect] = useState("/");
+
+  // useEffect(() => {
+  //   handleRedirect();
+  // }, [redirect]);
+
+  // const handleRedirect = () => {
+  //   console.log("redirecting :)")
+  // }
+
   return (
     <div>
       <ThemeProvider theme={theme}>
@@ -36,13 +49,16 @@ const App = () => {
             <Route path="/getting-started">
               <GettingStarted />
             </Route>
+            <Route path="/what-is-crudy">
+              <WhatIsCrudy />
+            </Route>
             <Route path="/">
               <Home />
             </Route>
           </Switch>
         </Router>
       </ThemeProvider>
-    </div>
+    </div >
   );
 }
 

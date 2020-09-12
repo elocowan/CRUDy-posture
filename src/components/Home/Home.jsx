@@ -5,14 +5,14 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    height: '200px',
+    height: '250px',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
   },
 }));
 
-const Home = () => {
+const Home = ({redirect, setRedirect}) => {
   const classes = useStyles();
 
   return (
