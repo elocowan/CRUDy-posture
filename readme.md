@@ -1,6 +1,6 @@
 # CRUDy Posture
 
-- npm install to install the dependencies
+- `npm install` to install the dependencies
 - open two tabs in terminal
 - for development:
   - In one tab run `npm run start:dev` (this runs live-server)
