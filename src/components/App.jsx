@@ -6,7 +6,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect
 } from "react-router-dom";
 import { createMuiTheme, ThemeProvider } from '@material-ui/core';
 import WhatIsCrudy from './WhatIsCrudy.jsx';
@@ -30,21 +29,11 @@ const theme = createMuiTheme({
 
 const App = () => {
 
-  // const [redirect, setRedirect] = useState("/");
-
-  // useEffect(() => {
-  //   handleRedirect();
-  // }, [redirect]);
-
-  // const handleRedirect = () => {
-  //   console.log("redirecting :)")
-  // }
-
   return (
     <div>
       <ThemeProvider theme={theme}>
-        <Header />
         <Router>
+          <Header />
           <Switch>
             <Route path="/getting-started">
               <GettingStarted />

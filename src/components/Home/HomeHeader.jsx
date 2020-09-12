@@ -5,18 +5,24 @@ import { useHistory } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
   bigTitle: {
     fontSize: 40,
+    fontWeight: "bold",
     display: 'flex',
     justifyContent: 'center'
   },
   description: {
     fontSize: 20,
     display: 'flex',
+    margin: "20px"
   },
   buttons: {
     display: 'flex',
     justifyContent: "space-around",
     marginTop: "20px",
+  },
+  buttonContent: {
+    textTransform: "none"
   }
+
 }));
 
 const HomeHeader = () => {
@@ -37,11 +43,11 @@ const HomeHeader = () => {
   return (
     <div>
       <Typography className={classes.bigTitle}>CRUDy Posture</Typography>
-      <Typography className={classes.description}>Audio Lessons for Improving Yourself</Typography>
+      <Typography className={classes.description}>Audio lessons for improving how you feel</Typography>
       <div className={classes.buttons}>
-        <Button variant="contained" onClick={gettingStartedRouteChange}>Get Started</Button>
+        <Button variant="contained" onClick={gettingStartedRouteChange} className={classes.buttonContent}>Get Started</Button>
 
-        <Button variant="outlined" onClick={infoRouteChange}>What is CRUDy?</Button>
+        <Button variant="outlined" onClick={infoRouteChange} className={classes.buttonContent}>Why is posture CRUDy?</Button>
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
 import React from 'react';
-import {AppBar, Toolbar, Typography, makeStyles} from '@material-ui/core';
+import { AppBar, Toolbar, makeStyles, Typography, Link } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   toolbar: theme.mixins.toolbar,
+  link: {
+    color: "white",
+  }
 }));
 
 const Header = () => {
@@ -18,7 +21,7 @@ const Header = () => {
     <div className={classes.root}>
       <AppBar position="sticky">
         <Toolbar>
-         <Typography className={classes.title}>CRUDy Posture</Typography>
+          <Typography>CRUDy Posture</Typography>
         </Toolbar>
       </AppBar>
     </div>
