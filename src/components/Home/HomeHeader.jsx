@@ -4,15 +4,17 @@ import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   bigTitle: {
-    fontSize: 40,
-    fontWeight: "bold",
+    fontSize: 50,
+    fontWeight: 900,
+    letterSpacing: "-1px",
     display: 'flex',
     justifyContent: 'center'
   },
   description: {
     fontSize: 20,
     display: 'flex',
-    margin: "20px"
+    margin: "20px",
+    fontWeight: 200,
   },
   buttons: {
     display: 'flex',
@@ -20,7 +22,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "20px",
   },
   buttonContent: {
-    textTransform: "none"
+    textTransform: "none",
+    fontSize: "16px",
+    fontWeight: 400,
   }
 
 }));
@@ -31,17 +35,17 @@ const HomeHeader = () => {
   const history = useHistory();
 
   const gettingStartedRouteChange = () => {
-    let path = "/getting-started";
+    let path = "/lessons/getting-started";
     history.push(path);
   }
 
   const infoRouteChange = () => {
-    let path = '/what-is-crudy';
+    let path = '/concepts/what-is-crudy';
     history.push(path);
   }
 
   return (
-    <div>
+    <div className={classes.root}>
       <Typography className={classes.bigTitle}>CRUDy Posture</Typography>
       <Typography className={classes.description}>Audio lessons for improving how you feel</Typography>
       <div className={classes.buttons}>

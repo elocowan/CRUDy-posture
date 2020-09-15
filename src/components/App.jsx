@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Header from './Header.jsx';
 import Home from './Home/Home.jsx';
 import GettingStarted from './GettingStarted.jsx'
@@ -7,7 +7,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { createMuiTheme, ThemeProvider } from '@material-ui/core';
+import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core';
 import WhatIsCrudy from './WhatIsCrudy.jsx';
 
 const theme = createMuiTheme({
@@ -27,18 +27,25 @@ const theme = createMuiTheme({
   },
 })
 
+const useStyles = makeStyles((theme) => ({
+  toolbar: theme.mixins.toolbar
+}));
+
 const App = () => {
+
+  const classes = useStyles();
 
   return (
     <div>
       <ThemeProvider theme={theme}>
         <Router>
           <Header />
+          <div className={classes.toolbar}></div>
           <Switch>
-            <Route path="/getting-started">
+            <Route path="/lessons/getting-started">
               <GettingStarted />
             </Route>
-            <Route path="/what-is-crudy">
+            <Route path="/concepts/what-is-crudy">
               <WhatIsCrudy />
             </Route>
             <Route path="/">
