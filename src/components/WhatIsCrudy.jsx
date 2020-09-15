@@ -139,9 +139,6 @@ const WhatIsCrudy = () => {
       <Typography className={classes.sectionParagraph}>
         Increase choice. Decrease compulsion.
       </Typography>
-      <Typography className={classes.sectionParagraph}>
-        Add more...
-      </Typography>
       <hr className={classes.hr} />
       <span id="skeleton" className={classes.anchor}></span>
       <Typography>
@@ -150,13 +147,16 @@ const WhatIsCrudy = () => {
         </a>
       </Typography>
       <Typography className={classes.sectionParagraph}>
-        The skeleton is the key to good posture, because the skeleton is strong and supporting without fatigue. It doesn't need to try to hold things up. No muscles, no effort involved.
+        The skeleton is the key to good posture, because bones supports without effort. Bony structures don't need to <em>try</em> to hold things up. They are inherently strong.
       </Typography>
       <Typography className={classes.sectionParagraph}>
-        Add more...
+        In bad posture the muscles are trying to do the work of the bones. In order to correct posture it is important to discover what has distorted the reaction of the nervous system to gravity.
       </Typography>
       <Typography className={classes.sectionParagraph}>
-        Add more...
+        One of the original causes of a distorted reaction to gravity is pain, either physical or an emotional. Pain that undermines confidence in the body and self is the main cause of deviations from the ideal posture. It reduces the individual’s value in his own eyes. Nervous tension rises, which in turn reduces sensitivity, so we do not sense continued small deviations from the ideal position, and the muscles tense without the individual’s even being aware of the effort they are making. Control gets so distorted that we think we are doing nothing when we are really straining muscles needlessly.
+      </Typography>
+      <Typography className={classes.sectionParagraph}>
+        The skeleton is the key! CRUDy posture at the highest level is about moving like a skeleton, moving with full support of the bony structures so all of the muscles are free to move you in any direction you desire with minimal effort.
       </Typography>
     </div>
   );

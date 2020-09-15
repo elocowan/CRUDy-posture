@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, List, makeStyles, ListItem } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,11 +54,6 @@ const GettingStarted = () => {
 
   const infoRouteChange = () => {
     let path = '/concepts/what-is-crudy';
-    history.push(path);
-  }
-
-  const goToLessonOne = () => {
-    let path = '/lessons/good-posture';
     history.push(path);
   }
 
@@ -161,7 +157,7 @@ const GettingStarted = () => {
         Turn off your notifications, your ringers, and anything else that could interrupt you. You deserve some time to relax and improve your posture!
       </Typography>
       <Typography className={classes.sectionParagraph}>
-        When you are set up in your comfortable spot on the floor and ready to start, click through to <a onClick={goToLessonOne} className={classes.links}>lesson 1</a>.
+        When you are set up in your comfortable spot on the floor and ready to start, click through to <Link to="/lessons/good-posture#top" className={classes.links}>lesson 1</Link>.
       </Typography>
     </div>
   );
