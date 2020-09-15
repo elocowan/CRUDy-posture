@@ -56,6 +56,11 @@ const GettingStarted = () => {
     history.push(path);
   }
 
+  const goToLessonOne = () => {
+    let path = '/lessons/good-posture';
+    history.push(path);
+  }
+
   return (
     <div className={classes.root}>
       <Typography className={classes.bigTitle}>Getting Started</Typography>
@@ -156,7 +161,7 @@ const GettingStarted = () => {
         Turn off your notifications, your ringers, and anything else that could interrupt you. You deserve some time to relax and improve your posture!
       </Typography>
       <Typography className={classes.sectionParagraph}>
-        When you are set up in your comfortable spot on the floor and ready to start, click through to <a >lesson 1</a>.
+        When you are set up in your comfortable spot on the floor and ready to start, click through to <a onClick={goToLessonOne} className={classes.links}>lesson 1</a>.
       </Typography>
     </div>
   );

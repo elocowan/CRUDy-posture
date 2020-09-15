@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './Header.jsx';
 import Home from './Home/Home.jsx';
-import GettingStarted from './GettingStarted.jsx'
+import GettingStarted from './GettingStarted.jsx';
+import GoodPosture from './GoodPosture.jsx';
 import {
   BrowserRouter as Router,
   Switch,
@@ -44,6 +45,9 @@ const App = () => {
           <Switch>
             <Route path="/lessons/getting-started">
               <GettingStarted />
+            </Route>
+            <Route path="/lessons/good-posture">
+              <GoodPosture />
             </Route>
             <Route path="/concepts/what-is-crudy">
               <WhatIsCrudy />
