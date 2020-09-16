@@ -145,7 +145,7 @@ const WhatIsCrudy = () => {
         </a>
       </Typography>
       <Typography className={classes.sectionParagraph}>
-        The skeleton is the key to good posture, because bones supports without effort. Bony structures don't need to <em>try</em> to hold things up. They are inherently strong.
+        The skeleton is the key to good posture. That's because bones support without effort. Bony structures don't need to <em>try</em> to hold things up. They are inherently strong.
       </Typography>
       <Typography className={classes.sectionParagraph}>
         In bad posture the muscles are trying to do the work of the bones. In order to correct posture it is important to discover what has distorted the reaction of the nervous system to gravity.
