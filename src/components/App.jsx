@@ -3,6 +3,7 @@ import Header from './Header.jsx';
 import Home from './Home/Home.jsx';
 import GettingStarted from './GettingStarted.jsx';
 import GoodPosture from './GoodPosture.jsx';
+import SideNav from './SideNav.jsx'
 import {
   BrowserRouter as Router,
   Switch,
@@ -29,7 +30,11 @@ const theme = createMuiTheme({
 })
 
 const useStyles = makeStyles((theme) => ({
-  toolbar: theme.mixins.toolbar
+  toolbar: theme.mixins.toolbar,
+  page: {
+    display: 'flex',
+    flexDirection: 'row',
+  }
 }));
 
 const App = () => {
@@ -44,7 +49,9 @@ const App = () => {
           <div className={classes.toolbar}></div>
           <Switch>
             <Route path="/lessons/getting-started">
-              <GettingStarted />
+              <div className={classes.page}>
+                <GettingStarted />
+              </div>
             </Route>
             <Route path="/lessons/good-posture">
               <GoodPosture />

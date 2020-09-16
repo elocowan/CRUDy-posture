@@ -69,7 +69,7 @@ const GoodPosture = () => {
   return (
     <div className={classes.root}>
       <a id="top" className={classes.anchor} />
-      <Typography className={classes.bigTitle}>Lesson 1: Good posture?</Typography>
+      <Typography className={classes.bigTitle}>Lesson 1: the R in CRUD</Typography>
       <Typography className={classes.description}>This page is the setup for your first CRUDy posture lesson</Typography>
       <Typography className={classes.blurb}><b>CRUDy Posture</b> is a collection of audio lessons to help improve how you feel. To learn more about CRUDy before you start, check out <a onClick={infoRouteChange} className={classes.links}>What is CRUDy?</a>.</Typography>
       <hr className={classes.hr} />
@@ -106,7 +106,7 @@ const GoodPosture = () => {
         Learn what good posture might actually <em>feel</em> like. Hint: it's <b>not</b> going to feel difficult, it's going to feel good!
       </Typography>
       <Typography className={classes.sectionParagraph}>
-        Explore the four facets of CRUDy posture: <b>Create</b> new postures, <b>Read</b> current postures, <b>Update</b> old postures, and <b>Delete</b> postures that no longer serve you.
+        Explore the R facet of CRUDy posture: <b>Read</b>!
       </Typography>
       <Typography className={classes.sectionParagraph}>
         <b>Relax and enjoy</b>. You are much more likely to adopt new behaviors that actually feel <em>good</em>. In CRUDy Posture, feel good posture is good posture.
@@ -139,7 +139,7 @@ const GoodPosture = () => {
       </Typography>
         <YouTube
           id={'react-player'}
-          videoId="FvOSsXgirG8"
+          videoId="jgpvBn4Ig-g"
           opts={opts}
           />
       {/* <hr className={classes.hr} />

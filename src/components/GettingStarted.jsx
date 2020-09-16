@@ -88,7 +88,7 @@ const GettingStarted = () => {
         <ListItem>
           <Typography>
             <a href="#lessonOne" className={classes.links}>
-              Lesson 1: What is GOOD posture?
+              Lesson 1: The R in CRUD
             </a>
           </Typography>
         </ListItem>
@@ -147,11 +147,11 @@ const GettingStarted = () => {
       <span id="lessonOne" className={classes.anchor}></span>
       <Typography>
         <a className={classes.sectionTitle}>
-          Lesson 1: What is GOOD posture?
+          Lesson 1: The R in CRUD
         </a>
       </Typography>
       <Typography className={classes.sectionParagraph}>
-        This first lesson is 25 minutes long. Make sure you're ready to relax.
+        This first lesson is 6 minutes long. Make sure you're ready to relax.
       </Typography>
       <Typography className={classes.sectionParagraph}>
         Turn off your notifications, your ringers, and anything else that could interrupt you. You deserve some time to relax and improve your posture!
